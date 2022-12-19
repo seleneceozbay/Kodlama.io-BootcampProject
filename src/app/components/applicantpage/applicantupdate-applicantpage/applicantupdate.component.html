@@ -1,0 +1,60 @@
+<form  [formGroup]="applicantUpdateForm" *ngIf="applicantUpdateForm">
+
+    <div  class="btn btn-button" style="float:right ;">
+     <button (click)="updateAplicant()" type="button" class="btn btn-success" style="margin-right: 10px;">GÜNCELLE</button>
+   </div>
+   
+    <ul class="list-group">
+     <div class="list-group">
+       <h5 class="title" style="text-align: center; color:firebrick;">ADAY GÜNCELLE</h5>
+     </div>
+  
+     <div class="mb-3">
+       <label for="firstName"><b>İsim</b></label>
+       <div class="form-group">
+         <input type="text" formControlName="firstName" class="form-control"/>
+       </div>
+     </div>
+  
+     <div class="mb-3">
+       <label for="lastName"><b>Soyisim</b></label>
+       <div class="form-group">
+         <input type="text" formControlName="lastName" class="form-control"/>
+       </div>
+     </div>
+  
+    
+     <div class="mb-3">
+       <label for="email"><b>Email</b></label>
+       <div class="form-group">
+         <input type="email" formControlName="email" class="form-control"/>
+       </div>
+     </div>
+     <div class="mb-3">
+        <label for="password"><b>Şifre</b></label>
+        <div class="form-group">
+          <input type="password" formControlName="password" class="form-control"/>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="nationalIdentity"><b>T.C.Kimlik Numarası</b></label>
+        <div class="form-group">
+          <input type="number" formControlName="nationalIdentity" class="form-control"/>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="dateOfBirth"><b>Doğum Tarihi</b></label>
+        <div class="form-group">
+          <input type="text" formControlName="dateOfBirth" class="form-control"/>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="about"><b>Hakkında</b></label>
+        <div class="form-group">
+          <input type="text" formControlName="about" class="form-control"/>
+        </div>
+      </div>
+    
+   </ul>
+   
+  </form>

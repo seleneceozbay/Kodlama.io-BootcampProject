@@ -1,0 +1,38 @@
+<app-navi></app-navi>
+<br> <br>
+<br>
+<div class="container mx-auto ">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4 mb-4" *ngFor="let bootcamp of bootcamps">
+            <div class="col text-center mb-5 ">
+                <div class="card" style="width: 18rem;">
+                    <div class="body" >
+                        <div class="backgroundEffect"></div>
+                        <div class="pic"> <img class="" src={{bootcamp.image}} alt="">
+                            <div class="date"> <span class="day"> {{bootcamp.dateStart.slice(0,5)}} </span>
+                                <span class="year">
+                                    {{bootcamp.dateStart.slice(6,10)}}</span>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <p class="h-1 mt-4">{{bootcamp.name}}</p>
+                            <p class="text-muted mt-3"> Kursumuz {{bootcamp.dateStart}} -
+                                {{bootcamp.dateEnd}}
+                                tarihleri
+                                arasında olacaktır. </p>
+                            <div class="d-flex align-items-center justify-content-between mt-3 pb-3">
+                                <div class="btn btn-primary" routerLink="/login">Detaylar<span
+                                        class="fas fa-arrow-right"></span></div>
+                                <div class="d-flex align-items-center justify-content-center foot">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+<router-outlet></router-outlet>

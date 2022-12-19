@@ -1,0 +1,18 @@
+<div class="container" style="display:flex;flex-direction:row;flex-wrap:wrap">
+    <div class="mb-3" *ngFor="let application of applications ">
+      <div class="card" style="width:18rem;margin-left:10px;">
+        <div class="card-body" >
+         
+          <p class="card-text" >Aday Id si:{{application.applicantId}}</p>
+          <p class="card-text" >Kurs Id si:{{application.bootcampId}}</p>
+          <p class="card-text">Durumu:{{application.state}}</p>
+          
+          <a href="#" class="btn btn-primary" (click)="deleteApplication(application)">Sil </a>
+         
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+

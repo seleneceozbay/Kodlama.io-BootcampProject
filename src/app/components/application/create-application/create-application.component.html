@@ -1,0 +1,73 @@
+<div class="content">
+    <div class="col-md-12">
+        <div class="card">
+            <div clas="card-header"><h5>Başvuru Kayıt Ekranı</h5>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="createApplicationForm">
+                    
+                    <!-- <div class="form-group">
+                        <input type="number"
+                        formControlName="applicantId" class="form-control"
+                        placeholder="Aday id si giriniz."/>
+
+                    </div> -->
+                    <label for="applicantId">Instructor</label>
+                    <div style="margin-top:5px" class="form-group">
+                        <select class="form-select" style="padding:0.7em" formControlName="applicantId">
+                        <option *ngFor="let applicant of applicants"
+                        value="{{applicant.id}}"
+                        id="applicantId"
+                        class="form-control">
+                        {{applicant.firstName}}{{applicant.lastName}}
+
+                        </option></select>
+                    </div>
+                    <label for="bootcampId">Bootcamp</label>
+                    <div style="margin-top:5px" class="form-group">
+                        <select class="form-select" style="padding:0.7em" formControlName="bootcampId">
+                        <option *ngFor="let bootcamp of bootcamps"
+                        value="{{bootcamp.id}}"
+                        id="applicantId"
+                        class="form-control">
+                        {{bootcamp.name}}
+
+                        </option></select>
+                    </div>
+                    <!-- <div class="form-group">
+                        <input type="number"
+                        formControlName="bootcampId" class="form-control"
+                        placeholder="Bootcamp id si giriniz."/>
+
+                    </div> -->
+                    <label for="state">State</label>
+                    <div style="margin-top:5px" class="form-group">
+                        <select class="form-select" style="padding:0.7em" formControlName="state">
+                        <option >0</option>
+                        <option >1</option>
+                       
+                        
+
+                        </select>
+                    </div>
+                    <!-- <div class="form-group">
+                        <input type="text"
+                        formControlName="state" class="form-control"
+                        placeholder="State i giriniz."/>
+
+                    </div> -->
+ 
+                </form>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-fill btn-primary" (click)="addApplication()" >Başvuruyu Kaydet</button>
+                
+            </div>
+        
+
+        </div>
+
+    </div>
+
+</div>
+

@@ -1,0 +1,76 @@
+<form  [formGroup]="applicationUpdateForm" *ngIf="applicationUpdateForm">
+
+    <div  class="btn btn-button" style="float:right ;">
+     <button (click)="updateApplication()" type="button" class="btn btn-success" style="margin-right: 10px;">GÜNCELLE</button>
+   </div>
+   
+    <ul class="list-group">
+     <div class="list-group">
+       <h5 class="title" style="text-align: center; color:firebrick;">BAŞVURU GÜNCELLE</h5>
+     </div>
+
+
+     <label for="applicantId">ApplicantId</label>
+
+            <div style="margin-top:5px" class="form-group">
+                        <select class="form-select" style="padding:0.7em" formControlName="applicantId">
+                        <option *ngFor="let applicant of applicants"
+                        value="{{applicant.id}}"
+                        id="applicantId"
+                        class="form-control">
+                        {{applicant.firstName}} {{applicant.lastName}}
+
+                        </option></select>
+                    </div>
+
+                    <label for="bootcampId">BootcampId</label>
+
+                    <div style="margin-top:5px" class="form-group">
+                                <select class="form-select" style="padding:0.7em" formControlName="bootcampId">
+                                <option *ngFor="let bootcamp of bootcamps"
+                                value="{{bootcamp.id}}"
+                                id="bootcampId"
+                                class="form-control">
+                                {{bootcamp.name}}
+        
+                                </option></select>
+                            </div>
+                  
+   
+  
+     <!-- <div class="mb-3">
+       <label for="applicantId"><b>Aday Id</b></label>
+       <div class="form-group">
+         <input type="number" formControlName="applicantId" class="form-control"/>
+       </div>
+     </div> -->
+  
+     <!-- <div class="mb-3">
+       <label for="bootcampId"><b>Bootcamp Id</b></label>
+       <div class="form-group">
+         <input type="number" formControlName="bootcampId" class="form-control"/>
+       </div>
+     </div> -->
+  
+    
+     <!-- <div class="mb-3">
+       <label for="state"><b>State</b></label>
+       <div class="form-group">
+         <input type="number" formControlName="state" class="form-control"/>
+       </div>
+     </div> -->
+
+     <label for="state">State</label>
+                    <div style="margin-top:5px" class="form-group">
+                        <select class="form-select" style="padding:0.7em" formControlName="state">
+                        <option >0</option>
+                        <option >1</option>
+                        </select>
+                    </div>
+         
+   </ul>
+   
+  </form>
+  
+
+

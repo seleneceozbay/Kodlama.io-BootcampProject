@@ -1,0 +1,71 @@
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card-body px-0 py-0">
+            <div class="table-responsive p-0">
+              <table class="table align-items-center mb-5">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-secondary text-xs font-weight-semibold opacity-7">
+                      Adaylar
+                    </th>
+                    <th class="text-secondary text-xs font-weight-semibold opacity-7 ps-2">
+                      Hakkında
+                    </th>
+                    <th class="text-secondary text-xs font-weight-semibold opacity-7 ps-2">
+                      Doğum Tarihi
+                    </th>
+                    <th class="text-secondary text-xs font-weight-semibold opacity-7 ps-2">
+                      Detay
+                    </th>
+                   
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let applicant of applicants">
+                    <td>
+                      <div class="d-flex px-5 py-4">
+                        <div class="d-flex align-items-center">
+                          <img src="{{ applicant.image }}" class="avatar avatar-xl rounded-circle me-5" />
+                        </div>
+                        <div class="d-flex flex-column justify-content-center ms-5">
+                          <h6 class="mb-0 text-sm font-weight-semibold">
+                            {{ applicant.firstName }} {{ applicant.lastName }}
+                          </h6>
+                          <p class="text-xl text-secondary mb-0">
+                            {{ applicant.email }}
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <p class="text-xl text-dark font-weight-semibold mb-0">
+                        {{ applicant.about }}
+                      </p>
+                    </td>
+  
+                    <td class="align-middle text-center">
+                      <span class="text-secondary text-xl font-weight-normal">{{
+                        applicant.dateOfBirth
+                        }}</span>
+                    </td>
+     
+                    <td class="align-middle text-center text-xl" routerLink="/instructor/instructor-applicants/instructor/{{
+                        applicant.id
+                      }}">
+                      <span class="badge badge-xl border border-success text-success bg-success"
+                        type="button">Detay</span>
+                    </td>
+                    <td class="align-middle">
+                      <span class="badge badge-md border border-success text-success bg-success" type="button" routerLink="/instructor/instructor-blacklist/create-blacklist/{{
+                          applicant.id
+                        }}">Kara Listeye Ekle
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>

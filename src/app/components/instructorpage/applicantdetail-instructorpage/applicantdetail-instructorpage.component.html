@@ -1,0 +1,84 @@
+<div class="main-content position-relative max-height-vh-100 h-100">
+    <div class="pt-7 pb-6 bg-cover" style="
+        background-image: url('../assets/img/header-blue-purple.jpg');
+        background-position: bottom;
+      "></div>
+    <div class="container">
+      <div class="card card-body py-2 bg-transparent shadow-none">
+        <div class="row">
+          <div class="col-auto">
+            <div class="avatar avatar-2xl rounded-circle position-relative mt-n7 border border-gray-100 border-4">
+              <img src={{applicantget.image}} alt="profile_image" class="w-100" />
+            </div>
+          </div>
+          <div class="col-auto my-auto">
+            <div class="h-100">
+              <h3 class="mb-0 font-weight-bold">
+                {{ applicantget.firstName }}
+                {{ applicantget.lastName }}
+              </h3>
+              <p class="mb-0">
+                {{ applicantget.email }}
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3 text-sm-end">
+            <a href="javascript:;" class="btn btn-sm btn-white" routerLink="/instructor/instructor-applicants">Geri</a>
+            <a href="javascript:;" class="btn btn-sm btn-dark" routerLink="/instructor/instructor-bootcamps">Kurslar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <br /><br />
+          <div class="card border shadow-xs h-100">
+            <div class="card-header pb-0 p-3">
+              <div class="row">
+                <div class="col-md-8 col-9">
+                  <h6 class="mb-0 font-weight-semibold text-lg">
+                    Profil Bilgisi
+                  </h6>
+                </div>
+                <div class="col-md-4 col-3 text-end">
+                </div>
+              </div>
+            </div>
+            <div class="card-body p-3">
+              <ul class="list-group">
+                <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pt-0 pb-1 text-sm">
+                  <span class="text-secondary">İsim:</span> &nbsp;
+                  {{ applicantget.firstName }}
+                </li>
+                <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm">
+                  <span class="text-secondary">Soyisim:</span> &nbsp;
+                  {{ applicantget.lastName }}
+                </li>
+                <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm">
+                  <span class="text-secondary">Doğum Tarihi:</span> &nbsp;
+                  {{ applicantget.dateOfBirth }}
+                </li>
+                <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm">
+                  <span class="text-secondary">Hakkında:</span> &nbsp;
+                  {{ applicantget.about }}
+                </li>
+  
+                <a class="btn btn-link text-dark mb-0 ps-1 pe-1 py-0" href="javascript:;">
+                  <i class="fab fa-linkedin fa-lg"></i>
+                </a>
+                <a class="btn btn-link text-dark mb-0 ps-1 pe-1 py-0" href="javascript:;">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+                <a class="btn btn-link text-dark mb-0 ps-1 pe-1 py-0" href="javascript:;">
+                  <i class="fab fa-slack fa-lg"></i>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+  

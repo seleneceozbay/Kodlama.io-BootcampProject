@@ -1,0 +1,251 @@
+<!-- <div class="container mt-7">
+    <div
+      class="page-header min-height-300 border-radius-xl mt-4"
+      style="
+        background-image: url('https://i.pinimg.com/564x/28/3d/dc/283ddc3bff90c10c9c1ed3e504cf7349.jpg');
+      "
+    >
+      <span class="mask bg-gradient-dark opacity-6"></span>
+    </div>
+   
+       
+        <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3">
+          <div class="nav-wrapper position-relative end-0">
+            <ul class="nav nav-pills nav-fill p-1 bg-transparent" role="tablist">
+              <li class="nav-item ">
+                
+                  <svg
+                    class="text-dark"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 40 40"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <title>settings</title>
+                    <g
+                      stroke="none"
+                      stroke-width="1"
+                      fill="none"
+                      fill-rule="evenodd"
+                    >
+                      <g
+                        transform="translate(-2020.000000, -442.000000)"
+                        fill="#FFFFFF"
+                        fill-rule="nonzero"
+                      >
+                        <g transform="translate(1716.000000, 291.000000)">
+                          <g transform="translate(304.000000, 151.000000)">
+                            <polygon
+                              class="color-background"
+                              opacity="0.596981957"
+                              points="18.0883333 15.7316667 11.1783333 8.82166667 13.3333333 6.66666667 6.66666667 0 0 6.66666667 6.66666667 13.3333333 8.82166667 11.1783333 15.315 17.6716667"
+                            ></polygon>
+                            <path
+                              class="color-background"
+                              d="M31.5666667,23.2333333 C31.0516667,23.2933333 30.53,23.3333333 30,23.3333333 C29.4916667,23.3333333 28.9866667,23.3033333 28.48,23.245 L22.4116667,30.7433333 L29.9416667,38.2733333 C32.2433333,40.575 35.9733333,40.575 38.275,38.2733333 L38.275,38.2733333 C40.5766667,35.9716667 40.5766667,32.2416667 38.275,29.94 L31.5666667,23.2333333 Z"
+                              opacity="0.596981957"
+                            ></path>
+                            <path
+                              class="color-background"
+                              d="M33.785,11.285 L28.715,6.215 L34.0616667,0.868333333 C32.82,0.315 31.4483333,0 30,0 C24.4766667,0 20,4.47666667 20,10 C20,10.99 20.1483333,11.9433333 20.4166667,12.8466667 L2.435,27.3966667 C0.95,28.7083333 0.0633333333,30.595 0.00333333333,32.5733333 C-0.0583333333,34.5533333 0.71,36.4916667 2.11,37.89 C3.47,39.2516667 5.27833333,40 7.20166667,40 C9.26666667,40 11.2366667,39.1133333 12.6033333,37.565 L27.1533333,19.5833333 C28.0566667,19.8516667 29.01,20 30,20 C35.5233333,20 40,15.5233333 40,10 C40,8.55166667 39.685,7.18 39.1316667,5.93666667 L33.785,11.285 Z"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                  <span class="ms-1">Çıkış</span>
+              
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+   
+  
+  
+  <div class="container py-5">
+    <div class="row">   
+  
+      
+  
+      <div class="col-3 ">
+        <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+          <div class="card-header  bg-gradient-light">
+            <h6>Toplam Başvuru Sayısı</h6>
+          </div>
+          <div class="card-body">
+            <p>Toplam : {{applications.length}}</p>
+          </div>
+        </div>
+      </div>
+  
+      
+      
+  
+    </div>
+  </div>
+  <div class="container mt-3"></div>
+<div class="row">
+   
+    <div class="col-md-12">
+        <div class="bg-light rounded border p-5 shadow-lg mt-4" style="height: 100%">
+            <div style="display: flex; justify-content: space-evenly; margin-top: 10px">
+                <div>
+                    <h2>Başvuru Listesi</h2>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="text-align: center">Başvurulan Bootcamp</th>
+                            <th scope="col" style="text-align: center">Eğitmen</th>
+                            <th scope="col" style="text-align: center">Başvuru Sonucu</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let application of applications">
+                            <td style="text-align: center">{{application.bootcampName}}</td>
+                             <td style="text-align: center">{{application.instructorName}}</td> 
+                             <td style="text-align: center">{{application.state==1?"Sonuçlandırılmadı":"Reddedildi"}}
+                            </td> 
+                          
+                         </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>  -->
+
+
+<div class="main-content position-relative bg-gray-100 max-height-vh-100 h-100">
+
+    <div class="pt-7 pb-6 bg-cover" style="background-image: url('../assets/img/header-orange-purple.jpg'); background-position: bottom;"></div>
+    <div class="container">
+      <div class="card card-body py-2 bg-transparent shadow-none">
+        <div class="row">
+          <div class="col-auto">
+            <div class="avatar avatar-2xl rounded-circle position-relative mt-n7 border border-gray-100 border-4">
+              <img src="{{applicant.image}}" alt="profile_image" class="w-100">
+            </div>
+          </div>
+          <div class="col-auto my-auto">
+            <div class="h-100">
+              <h3 class="mb-0 font-weight-bold">
+               {{applicant.firstName}} {{applicant.lastName}}
+              </h3>
+              <p class="mb-0">
+                {{applicant.email}}
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 my-sm-auto ms-sm-auto me-sm-0 mx-auto mt-3 text-sm-end">
+            <a href="javascript:;" class="btn btn-sm btn-white" routerLink="/applicant/applicant-bootcamps">Geri</a>
+            <a href="javascript:;" class="btn btn-sm btn-dark" routerLink="/homepage">Çıkış</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-3 py-3">
+      <div class="row">
+        <!-- <div class="col-12 col-xl-4 mb-4">
+          
+        </div> -->
+        <div class="col-12 col-xl-4 mb-4">
+          <div class="card border shadow-xs h-100">
+            <div class="card-header pb-0 p-3">
+              <div class="row">
+                <div class="col-md-8 col-9">
+                  <h6 class="mb-0 font-weight-semibold text-lg">Profil Bilgisi</h6>
+                  <p class="text-sm mb-1">Hakkında bilgi güncellemesi</p>
+                </div>
+                <!-- <div class="col-md-4 col-3 text-end">
+                  <button type="button" class="btn btn-white btn-icon px-2 py-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M21.731 2.269a2.625 2.625 0 00-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 000-3.712zM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 00-1.32 2.214l-.8 2.685a.75.75 0 00.933.933l2.685-.8a5.25 5.25 0 002.214-1.32L19.513 8.2z" />
+                    </svg>
+                  </button>
+                </div> -->
+              </div>
+            </div>
+            <div class="card-body p-3">
+            
+              <ul class="list-group" >
+                <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pt-0 pb-1 text-sm"><span class="text-secondary">First Name:</span> &nbsp; {{applicant.firstName}}</li>
+                <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm"><span class="text-secondary">Last Name:</span> &nbsp; {{applicant.lastName}}</li>
+                <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm"><span class="text-secondary">Email:</span> &nbsp; {{applicant.email}}</li>
+                <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm"><span class="text-secondary">About:</span> &nbsp;{{applicant.about}}</li>
+                <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm"><span class="text-secondary">Date Of Birth:</span> &nbsp; {{applicant.dateOfBirth}}</li>
+                <li class="list-group-item border-0 ps-0 text-dark font-weight-semibold pb-1 text-sm">
+                 
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-4 mb-4">
+         
+           
+         
+              
+                  <h6 class="mb-0 font-weight-semibold text-lg">Başvurular</h6>
+                 
+              
+               
+                    <h6>Toplam Başvuru Sayısı : {{applications.length}}</h6>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="text-align: center">Başvurulan Bootcamp</th>
+                                <th scope="col" style="text-align: center">Eğitmen</th>
+                                <!-- <th scope="col" style="text-align: center">Başvuru Sonucu</th> -->
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let application of applications">
+                                <td style="text-align: center">{{application.bootcampName}}</td>
+                                 <td style="text-align: center">{{application.instructorName}}</td> 
+                                 <!-- <td style="text-align: center">{{application.state==1?"Sonuçlandırılmadı":"Reddedildi"}} -->
+                              
+                              
+                             </tr>
+                        </tbody>
+                    </table>
+                  </div>
+
+                
+              </div>
+            </div>
+            <!-- <div class="card-body p-3 pt-0">
+              <ul class="list-group">
+               
+                <li class="list-group-item border-0 d-flex align-items-center px-0 mb-1">
+                  
+                  <div class="d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="mb-0 text-sm font-weight-semibold">Kurslar</h6>
+                    <p class="mb-0 text-sm text-secondary"></p>
+                  </div>
+                  <span class="p-1 bg-success rounded-circle ms-auto me-3">
+                    <span class="visually-hidden">Online</span>
+                  </span>
+                </li>
+              </ul>
+            </div> -->
+          </div>
+      
+     
+    
+     
+  <app-footer></app-footer>
+
+
+
+
+

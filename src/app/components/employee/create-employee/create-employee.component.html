@@ -1,0 +1,41 @@
+<div class="content ">
+    <div class="col-md-6 ">
+        <div class="card ">
+            <div class="card-header bg-gray-100">
+                <br> <br>
+                <h5>Çalışan Kayıt Ekranı</h5>
+            </div>
+            <div class="card-body bg-gray-100">
+                <form [formGroup]="createEmployeeForm">
+
+                    <div class="form-group">
+                        <input type="firstName" class="form-control" formControlName="firstName" placeholder="İsminizi Giriniz" />
+                    </div>
+                    <div class="form-group">
+                        <input type="lastName" class="form-control" formControlName="lastName" placeholder="Soyİsminizi Giriniz" />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" formControlName="email" placeholder="Mail Adresinizi Giriniz" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" formControlName="password" placeholder="Şifre Giriniz" />
+                    </div>
+                    <div class="form-group">
+                        <input type="nationalIdentity" class="form-control" formControlName="nationalIdentity"
+                            placeholder="T.C. Kimlik Numaranızı Giriniz" />
+                    </div>
+                    <div class="form-group">
+                        <input type="dateOfBirth" class="form-control" formControlName="dateOfBirth" placeholder="Doğum Tarihiniz Giriniz" />
+                    </div>
+                    <div class="form-group">
+                        <input type="position" class="form-control" formControlName="position"
+                            placeholder="Çalıştığınız Pozisyonu Giriniz" />
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-fill btn-success form-control" (click)="addEmployee()">Çalışanı Kaydet</button>
+            </div>
+        </div>
+    </div>
+</div>

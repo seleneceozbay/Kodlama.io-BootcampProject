@@ -1,0 +1,65 @@
+<div class="content">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header"><h5>Aday Kayıt Ekranı</h5>
+            </div>
+            <div class="card-body">
+                <form [formGroup]="createApplicantForm">
+                    
+                    <div class="form-group">
+                        <input type="text"
+                        formControlName="firstName" class="form-control"
+                        placeholder="İsminizi Giriniz"/>
+
+                    </div> 
+                    <div class="form-group">
+                        <input type="text"
+                        formControlName="lastName" class="form-control"
+                        placeholder="Soyisminizi Giriniz"/>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="email"
+                        formControlName="email" class="form-control"
+                        placeholder="Mail Adresinizi Giriniz"/>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="password"
+                        formControlName="password" class="form-control"
+                        placeholder="Şifre Giriniz"/>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="number"
+                        formControlName="nationalIdentity" class="form-control"
+                        placeholder="T.C Kimlik Numaranızı Giriniz."/>
+
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text"
+                        formControlName="dateOfBirth" class="form-control"
+                        placeholder="Doğum Tarinizi giriniz."/>
+
+                    </div>
+                    <div class="form-group">
+                        <input type="text"
+                        formControlName="about" class="form-control"
+                        placeholder="Hakkınızda kısmını doldurunuz."/>
+
+                    </div>
+                </form>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-fill btn-primary" (click)="addApplicant()" >Adayı Kaydet</button>
+                
+            </div>
+        
+
+        </div>
+
+    </div>
+
+</div>
+

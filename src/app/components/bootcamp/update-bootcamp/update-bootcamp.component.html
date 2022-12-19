@@ -1,0 +1,93 @@
+<div class="content">
+  <button class="btn btn-secondary" routerLink="">BACK</button>
+  <br />
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="title">Update Bootcamp</h5>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="bootcampUpdateForm" *ngIf="bootcampUpdateForm">
+          <div class="mb-3">
+            <label for="name">Bootcamp Name</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                formControlName="name"
+                class="form-control"
+                placeholder="Name"
+              />
+            </div>
+            <label for="instructorId">Instructor</label>
+            <div style="margin-top: 5px" class="form-group">
+              <select
+                class="form-select"
+                style="padding: 0.7em"
+                formControlName="instructorId"
+              >
+                <option
+                  *ngFor="let instructor of instructors"
+                  value="{{ instructor.id }}"
+                  id="instructorId"
+                  class="form-control"
+                >
+                  {{ instructor.firstName }} {{ instructor.lastName }}
+                </option>
+              </select>
+              <!-- <input
+                type="number"
+                id="instructorId"
+                formControlName="instructorId"
+                class="form-control"
+                placeholder="Instructor Id"
+              /> -->
+            </div>
+            <label for="dateStart">Date Start</label>
+            <div style="margin-top: 5px" class="form-group">
+              <input
+                type="date"
+                id="dateStart"
+                formControlName="dateStart"
+                class="form-control"
+                placeholder="Date Start"
+              />
+            </div>
+            <label for="dateEnd">Date End</label>
+            <div style="margin-top: 5px" class="form-group">
+              <input
+                type="text"
+                id="dateEnd"
+                formControlName="dateEnd"
+                class="form-control"
+                placeholder="Date End"
+              />
+            </div>
+            <label for="state">State</label>
+            <div style="margin-top: 5px" class="form-group">
+              <input
+                type="number"
+                id="state"
+                formControlName="state"
+                class="form-control"
+                placeholder="state"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer">
+        <div class="d-grid gap-2">
+          <button
+            style="margin-bottom: 10px; margin-left: 15px; margin-right: 15px"
+            class="btn btn-primary"
+            type="button"
+            (click)="update()"
+          >
+            UPDATE
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<form [formGroup]="employeeUpdateForm" *ngIf="employeeUpdateForm">
+
+    <div class="btn btn-button" style="float:right ;">
+        <button (click)="update()" type="button" class="btn btn-success" style="margin-right: 10px;">Güncelle</button>
+    </div>
+
+    <ul class="list-group">
+        <div class="list-group">
+            <h5 class="title" style="text-align: center; color:firebrick;">Çalişan Güncelle</h5>
+        </div>
+
+
+        <div class="mb-3">
+            <label for="firstName"><b>İsim</b></label>
+            <div class="form-group">
+                <input type="text" formControlName="firstName" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="lastName"><b>Soyisim</b></label>
+            <div class="form-group">
+                <input type="text" formControlName="lastName" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="email"><b>E-Mail</b></label>
+            <div class="form-group">
+                <input type="text" formControlName="email" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="password"><b>Şifre</b></label>
+            <div class="form-group">
+                <input type="text" formControlName="password" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="nationalIdentity"><b>T.C. Kimlik Numarası</b></label>
+            <div class="form-group">
+                <input type="text" formControlName="nationalIdentity" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="dateOfBirth"><b>Doğum Tarihi</b></label>
+            <div class="form-group">
+                <input type="text" formControlName="dateOfBirth" class="form-control"/>
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="position"><b>Pozisyon</b></label>
+            <div class="form-group">
+                <input type="text" formControlName="position" class="form-control"/>
+            </div>
+        </div>
+    </ul>

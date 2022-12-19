@@ -1,0 +1,54 @@
+<div class="content ">
+  <div class="col-md-6 ">
+    <div class="card ">
+      <div class="card-header bg-gray-100">
+        <br> <br>
+        <h5 class="title">Kurs Ekle</h5>
+      </div>
+      <div class="card-body bg-gray-100">
+        <!-- formGroup="carAddForm" ile map işlemini yapmış oluruz. -->
+        <form [formGroup]="bootcampAddForm">
+          <div style="margin-top: 5px" class="form-group">
+            <label for="instructorId">Eğitmen Seçiniz</label>
+            <select class="form-select" formControlName="instructorId">
+              <option selected>Eğitmen Seçiniz...</option>
+              <option *ngFor="let instructor of instructors" value="{{ instructor.id }}" id="instructorId"
+                class="form-control">
+                {{ instructor.firstName }} {{ instructor.lastName }}
+              </option>
+            </select>
+
+          </div>
+          <div style="margin-top: 5px" class="form-group">
+            <label for="name">Eğitmen Seçiniz</label>
+            <input type="text" id="name" formControlName="name" class="form-control"
+              placeholder="Bootcamp İsmini Giriniz..." />
+          </div>
+          <div style="margin-top: 5px" class="form-group">
+            <label for="dateStart">Başlama Tarihi</label>
+            <input type="text" id="dateStart" formControlName="dateStart" class="form-control"
+              placeholder="Bootcamp Başlangıç Tarihi Giriniz..." />
+          </div>
+          <div style="margin-top: 5px" class="form-group">
+            <label for="dateEnd">Bitiş Tarihi</label>
+            <input type="text" id="dateEnd" formControlName="dateEnd" class="form-control"
+              placeholder="Bootcamp Bitiş Tarihi Giriniz..." />
+          </div>
+          <div style="margin-top: 5px" class="form-group">
+            <label for="state">Uygunluk Durumu</label>
+            <input type="text" id="state" formControlName="state" class="form-control"
+              placeholder="Bootcamp Durumu Giriniz..." />
+          </div>
+        </form>
+      </div>
+      <div class="bootcamp-footer">
+        <div class="d-grid gap-2">
+          <button style="margin-bottom: 10px; margin-left: 15px; margin-right: 15px" class="btn btn-success"
+            type="button" (click)="addBootcamp()" routerLink="/create-bootcamp">
+            Ekle
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

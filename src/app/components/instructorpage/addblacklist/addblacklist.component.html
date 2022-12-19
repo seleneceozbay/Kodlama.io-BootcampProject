@@ -1,0 +1,10 @@
+<br><br> <form class="form-sample" [formGroup]="blacklistAddForm" *ngIf="blacklistAddForm">
+    <div class="form-group">
+      <label for="date">Date</label>
+      <textarea class="form-control" id="date" rows="1" formControlName="date"></textarea>
+      <label for="reason">Reason</label>
+      <textarea class="form-control" id="reason" rows="4" formControlName="reason"></textarea>
+    </div>
+    <button type="button" class="btn btn-info" (click)="add()">Add Black List</button>
+  </form> 
+  

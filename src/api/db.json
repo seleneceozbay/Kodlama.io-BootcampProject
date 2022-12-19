@@ -1,0 +1,556 @@
+{
+  "applicant": [
+    {
+      "id": 1,
+      "firstName": "Selen",
+      "lastName": "Özbay",
+      "email": "selen@gmail.com",
+      "password": "123456",
+      "nationalIdentity": 12345678912,
+      "dateOfBirth": "10/11/1997",
+      "about": "Harita Mühendisi",
+      "image": "https://cdn-icons-png.flaticon.com/512/219/219969.png",
+      "role": "roleApplicant",
+      "state": 1
+    },
+    {
+      "id": 2,
+      "firstName": "Mert",
+      "lastName": "Subaşı",
+      "email": "mert@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 12345678912,
+      "dateOfBirth": "18/01/1995",
+      "about": "Bilgisayar Programcılığı",
+      "image": "https://c8.alamy.com/zooms/9/bdd86bbc1d0f4303b01ae552ebadb52e/kfeafg.jpg",
+      "role": "roleApplicant",
+      "state": 1
+    },
+    {
+      "firstName": "Rümeysa",
+      "lastName": "Doğan",
+      "email": "rumeysa@hotmail.com",
+      "password": "123456",
+      "nationalIdentity": 12313465467,
+      "dateOfBirth": "12/02/1995",
+      "about": "Yönetim Bilişim Sistemleri",
+      "id": 3,
+      "image": "https://cdn-icons-png.flaticon.com/512/147/147135.png",
+      "role": "roleApplicant",
+      "state": 1
+    },
+    {
+      "firstName": "Elif Sena ",
+      "lastName": "Erdoğan",
+      "email": "elif@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 15678334679,
+      "dateOfBirth": "15/02/1998",
+      "about": "Bilgisayar Mühendisi",
+      "id": 4,
+      "image": "https://www.pngitem.com/pimgs/m/0-6243_user-profile-avatar-scalable-vector-graphics-icon-woman.png",
+      "role": "roleApplicant",
+      "state": 1
+    },
+    {
+      "firstName": "Hediye",
+      "lastName": "Yıldırım",
+      "email": "gift@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 12345678987,
+      "dateOfBirth": "05/10/1998",
+      "about": "Bilgisayar Mühendisi",
+      "id": 5,
+      "image": "https://cdn-icons-png.flaticon.com/512/219/219989.png",
+      "role": "roleApplicant",
+      "state": 1
+    },
+    {
+      "firstName": "Ahmet",
+      "lastName": "Karagöz",
+      "email": "ahmet@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 12345678987,
+      "dateOfBirth": "10/10/1997",
+      "about": "Ziraat Mühendisi",
+      "id": 6,
+      "image": "https://airnfts.s3.amazonaws.com/profile-images/0xD9c4216cFE7c70344f80035B0bf5FBE01AA69d37_1619305985184.png",
+      "role": "roleApplicant",
+      "state": 0
+    },
+    {
+      "firstName": "Kemal",
+      "lastName": "Soysal",
+      "email": "kemal@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 14786990873,
+      "dateOfBirth": "30/07/1990",
+      "about": "Mezun",
+      "id": 7,
+      "image": "https://c8.alamy.com/zooms/9/756e2177abb24ba2b0a07fdb7733602f/kfeaf4.jpg",
+      "role": "roleApplicant",
+      "state": 1
+    },
+    {
+      "firstName": "Burak",
+      "lastName": "Okyay",
+      "email": "burak@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 89067114563,
+      "dateOfBirth": "17/09/1999",
+      "about": "Öğrenci",
+      "id": 8,
+      "image": "https://www.shareicon.net/data/512x512/2016/09/15/829444_man_512x512.png",
+      "role": "roleApplicant",
+      "state": 1
+    },
+    {
+      "firstName": "Onur",
+      "lastName": "Özüpek",
+      "email": "onur@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 3633748373673845,
+      "dateOfBirth": "20/10/1995",
+      "about": "Bilgisayar Mühendisi",
+      "role": "roleApplicant",
+      "id": 9
+    },
+    {
+      "firstName": "Onur",
+      "lastName": "Özüpek",
+      "email": "onur@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 3633748373673845,
+      "dateOfBirth": "20/10/1995",
+      "about": "Bilgisayar Mühendisi",
+      "role": "roleApplicant",
+      "id": 10
+    },
+    {
+      "firstName": "Ayşe",
+      "lastName": "Başar",
+      "email": "ayse@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 15975346820,
+      "dateOfBirth": "18/09/1997",
+      "about": "Yazılımcı",
+      "role": "roleApplicant",
+      "state": 0,
+      "token": 462452156547856,
+      "expiration": "sdfsdfhjfghgdfad",
+      "id": 11
+    }
+  ],
+  "instructor": [
+    {
+      "id": 1,
+      "firstName": "Engin",
+      "lastName": "DEMİROĞ",
+      "email": "engin@gmail.com",
+      "password": "12345",
+      "companyName": "Kodlama.io",
+      "nationalIdentity": 12345678914,
+      "dateOfBirth": "01/01/1980",
+      "image": "https://pbs.twimg.com/profile_images/1404479261566713856/_MklDkhx_400x400.jpg",
+      "title": "Yazılım Geliştirme Eğitmeni",
+      "instagramadress": "https://www.instagram.com/engindemirog/",
+      "twitteradress": "https://twitter.com/engindemirog",
+      "githubadress": "https://github.com/engindemirog",
+      "role": "roleInstructor"
+    },
+    {
+      "id": 2,
+      "firstName": "Mustafa Murat",
+      "lastName": "COŞKUN",
+      "email": "murat@gmail.com",
+      "password": "12345",
+      "companyName": "murat.com",
+      "nationalIdentity": 12345678814,
+      "dateOfBirth": "01/01/1985",
+      "image": "https://avatars.githubusercontent.com/u/15064847?v=4",
+      "title": "Yazılım Geliştirici",
+      "instagramadress": "https://www.instagram.com/mustafamuratcoskunn/",
+      "twitteradress": "https://twitter.com/mustafam_coskun",
+      "githubadress": "https://github.com/mustafamuratcoskun",
+      "role": "roleInstructor"
+    },
+    {
+      "id": 3,
+      "firstName": "Erdoğan",
+      "lastName": "ÖZTÜRK",
+      "email": "erdogan@gmail.com",
+      "password": "12345",
+      "companyName": "erdogan.com",
+      "nationalIdentity": 12345658914,
+      "dateOfBirth": "01/01/1980",
+      "image": "https://pbs.twimg.com/profile_images/809026982172360704/aQGdnZzH_400x400.jpg",
+      "title": "Yazılım Mimarı",
+      "instagramadress": "https://www.instagram.com/dijital_dervis/",
+      "twitteradress": "https://twitter.com/erdoganblog",
+      "githubadress": "https://github.com/dijitaldervis",
+      "role": "roleInstructor"
+    }
+  ],
+  "employee": [
+    {
+      "firstName": "Esra",
+      "lastName": "Pekdemir Taşçı",
+      "email": "esra@gmail.com",
+      "password": "123456",
+      "nationalIdentity": 12345678919,
+      "dateOfBirth": "01/01/1990",
+      "position": "memur",
+      "id": 1,
+      "img": "https://cdn3.iconfinder.com/data/icons/corporate-avatars-in-various-human-skin-tones-1/100/Corporate_Avatars_colour_63-01-512.png"
+    },
+    {
+      "firstName": "Enes",
+      "lastName": "Bin Malik Köksal",
+      "email": "enes@gmail.com",
+      "password": "123456",
+      "nationalIdentity": 12343258919,
+      "dateOfBirth": "15/08/1987",
+      "position": "memur",
+      "id": 2,
+      "img": "https://www.linkpicture.com/q/enesbinmalikkoksal.jpg"
+    },
+    {
+      "firstName": "İsmail",
+      "lastName": "Karakaya",
+      "email": "ismail@gmail.com",
+      "password": "123456",
+      "nationalIdentity": 73655678919,
+      "dateOfBirth": "29/02/1988",
+      "position": "memur",
+      "id": 3,
+      "img": "https://www.linkpicture.com/q/ismailkarakaya_2.jpg"
+    },
+    {
+      "firstName": "Serhat",
+      "lastName": "Taşçı",
+      "email": "serhat@gmail.com",
+      "password": "123456",
+      "nationalIdentity": 73165673019,
+      "dateOfBirth": "13/05/1988",
+      "position": "memur",
+      "id": 4,
+      "img": "https://www.linkpicture.com/q/serhartasci.jpg"
+    }
+  ],
+  "bootcamp": [
+    {
+      "id": 1,
+      "instructorId": 1,
+      "name": "Frontend",
+      "dateStart": "14/11/2022",
+      "dateEnd": "12/12/2022",
+      "state": 1,
+      "image": "https://birparcatuhaftik.com/wp-content/uploads/2020/08/front-end-developer.jpg",
+      "instructorName": "Engin DEMİROĞ"
+    },
+    {
+      "instructorId": 2,
+      "name": "Backend",
+      "dateStart": "21/12/2022",
+      "dateEnd": "30/12/2022",
+      "state": "1",
+      "id": 2,
+      "image": "https://play-lh.googleusercontent.com/mHEywwrourM3N9Z94du0IqO7tVu0cm78E0NeYdUFUwDAvfPLtFt0jXMGbh8mIcapDio",
+      "instructorName": "Mustafa Murat COŞKUN"
+    },
+    {
+      "instructorId": 3,
+      "name": "UI/UX Designer",
+      "dateStart": "01/01/2023",
+      "dateEnd": "05/02/2023",
+      "state": "1",
+      "id": 3,
+      "image": "https://www.acquisition-international.com/wp-content/uploads/2021/09/UI-UX-Design.jpg",
+      "instructorName": "Erdoğan ÖZTÜRK "
+    },
+    {
+      "id": 4,
+      "instructorId": 2,
+      "name": "Game Developer",
+      "dateStart": "22/05/2022",
+      "dateEnd": "12/07/2022",
+      "state": 1,
+      "image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20191206194406/Tips-For-an-Indie-Game-Developer.png",
+      "instructorName": "Mustafa Murat COŞKUN"
+    },
+    {
+      "id": 5,
+      "instructorId": 1,
+      "name": "Swift Programming",
+      "dateStart": "09/10/2022",
+      "dateEnd": "12/11/2022",
+      "state": 1,
+      "image": "https://ecoursedeals.com/wp-content/uploads/2018/06/1062284_9f5b_2.jpg",
+      "instructorName": "Engin DEMİROĞ"
+    },
+    {
+      "id": 6,
+      "instructorId": 3,
+      "name": "Java Programming",
+      "dateStart": "18/12/2022",
+      "dateEnd": "17/01/2023",
+      "state": 1,
+      "image": "https://i.pinimg.com/originals/df/16/7e/df167ee93f90bda5894c985140ea570b.jpg",
+      "instructorName": "Erdoğan ÖZTÜRK"
+    }
+  ],
+  "blacklist": [
+    {
+      "date": "12.03.2022",
+      "reason": "Yalancı",
+      "applicantId": "11",
+      "applicantName": "Ayşe Başar",
+      "id": 1
+    }
+  ],
+  "application": [
+    {
+      "id": 1,
+      "applicantId": 1,
+      "applicantName": "Selen Ece Özbay",
+      "bootcampId": 1,
+      "bootcampName": "Frontend",
+      "state": 1
+    },
+    {
+      "id": 2,
+      "applicantId": 3,
+      "applicantName": "Rümeysa Doğan",
+      "bootcampId": 3,
+      "bootcampName": "UX/UI Designer",
+      "state": 1
+    },
+    {
+      "bootcampId": 2,
+      "bootcampName": "Backend",
+      "instructorName": "Mustafa Murat COŞKUN",
+      "state": 1,
+      "applicantId": "5",
+      "id": 3
+    }
+  ],
+  "enginbootcamp": [
+    {
+      "id": 1,
+      "name": "Frontend",
+      "sayi": 5
+    },
+    {
+      "id": 2,
+      "name": "Swift Programming",
+      "sayi": 2
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Selen",
+      "lastName": "Özbay",
+      "email": "selen@gmail.com",
+      "password": "12345",
+      "role": "roleApplicant",
+      "expiration": "dsgdsgdsg",
+      "token": "32545678657832"
+    },
+    {
+      "id": 2,
+      "firstName": "Mert",
+      "lastName": "Subaşı",
+      "email": "mert@gmail.com",
+      "password": "12345",
+      "role": "roleApplicant",
+      "expiration": "dsgdsgdsg",
+      "token": "325346784532"
+    },
+    {
+      "id": 3,
+      "firstName": "Rümeysa",
+      "lastName": "Doğan",
+      "email": "rumeysa@hotmail.com",
+      "password": "123456",
+      "role": "roleApplicant",
+      "state": 1,
+      "expiration": "dsgdsgdsg",
+      "token": "3253255676532532"
+    },
+    {
+      "firstName": "Elif Sena ",
+      "lastName": "Erdoğan",
+      "email": "elif@gmail.com",
+      "password": "12345",
+      "id": 4,
+      "role": "roleApplicant",
+      "state": 1,
+      "expiration": "dasdsgsdfghfsg",
+      "token": "325756566532532"
+    },
+    {
+      "id": 5,
+      "firstName": "Hediye",
+      "lastName": "Yıldırım",
+      "email": "gift@gmail.com",
+      "password": "12345",
+      "role": "roleApplicant",
+      "state": 1,
+      "expiration": "dsgdsgdsg",
+      "token": "32354676436532532532"
+    },
+    {
+      "firstName": "Ahmet",
+      "lastName": "Karagöz",
+      "email": "ahmet@gmail.com",
+      "password": "12345",
+      "id": 6,
+      "role": "roleApplicant",
+      "state": 0,
+      "expiration": "dvfgthdsg",
+      "token": "798576436532532532"
+    },
+    {
+      "firstName": "Kemal",
+      "lastName": "Soysal",
+      "email": "kemal@gmail.com",
+      "password": "12345",
+      "id": 7,
+      "role": "roleApplicant",
+      "state": 1,
+      "expiration": "dvoxuidsg",
+      "token": "794584546524197532"
+    },
+    {
+      "firstName": "Burak",
+      "lastName": "Okyay",
+      "email": "burak@gmail.com",
+      "password": "12345",
+      "id": 8,
+      "role": "roleApplicant",
+      "state": 1,
+      "expiration": "dwedwidsg",
+      "token": "794965424415397532"
+    },
+    {
+      "id": 9,
+      "firstName": "Engin",
+      "lastName": "DEMİROĞ",
+      "email": "engin@gmail.com",
+      "password": "12345",
+      "image": "https://pbs.twimg.com/profile_images/1404479261566713856/_MklDkhx_400x400.jpg",
+      "companyName": "Kodlama.io",
+      "title": "Yazılım Geliştirme Eğitmeni",
+      "dateOfBirth": "01/01/1980",
+      "role": "roleInstructor",
+      "expiration": "dsgdsgdsg",
+      "token": "32532532533456782"
+    },
+    {
+      "id": 10,
+      "firstName": "Mustafa Murat",
+      "lastName": "COŞKUN",
+      "email": "murat@gmail.com",
+      "password": "12345",
+      "image": "https://avatars.githubusercontent.com/u/15064847?v=4",
+      "companyName": "murat.com",
+      "title": "Yazılım Geliştirici",
+      "dateOfBirth": "01/01/1985",
+      "role": "roleInstructor",
+      "expiration": "dsyhggdsg",
+      "token": "32441354993456782"
+    },
+    {
+      "id": 11,
+      "firstName": "Erdoğan",
+      "lastName": "ÖZTÜRK",
+      "email": "erdogan@gmail.com",
+      "password": "12345",
+      "image": "https://pbs.twimg.com/profile_images/809026982172360704/aQGdnZzH_400x400.jpg",
+      "companyName": "erdogan.com",
+      "title": "Yazılım Mimarı",
+      "dateOfBirth": "01/01/1980",
+      "role": "roleInstructor",
+      "expiration": "dsgdsgdsg",
+      "token": "3253253098762532"
+    },
+    {
+      "id": 12,
+      "firstName": "Esra",
+      "lastName": "Pekdemir Taşçı",
+      "email": "esra@gmail.com",
+      "password": "12345",
+      "dateOfBirth": "01/01/1990",
+      "img": "https://cdn3.iconfinder.com/data/icons/corporate-avatars-in-various-human-skin-tones-1/100/Corporate_Avatars_colour_63-01-512.png",
+      "position": "memur",
+      "role": "roleAdmin",
+      "expiration": "dsgdsgdsg",
+      "token": "321324562532532"
+    },
+    {
+      "id": 13,
+      "firstName": "Enes",
+      "lastName": "Bin Malik Köksal",
+      "email": "enes@gmail.com",
+      "password": "123456",
+      "dateOfBirth": "15/08/1987",
+      "img": "https://www.linkpicture.com/q/enesbinmalikkoksal.jpg",
+      "position": "memur",
+      "role": "roleAdmin",
+      "expiration": "dswadfedgdsg",
+      "token": "321324548562532"
+    },
+    {
+      "id": 14,
+      "firstName": "İsmail",
+      "lastName": "Karakaya",
+      "email": "ismail@gmail.com",
+      "password": "123456",
+      "dateOfBirth": "29/02/1988",
+      "img": "https://www.linkpicture.com/q/ismailkarakaya_2.jpg",
+      "position": "memur",
+      "role": "roleAdmin",
+      "expiration": "dswadfedgdsg",
+      "token": "321324548562532"
+    },
+    {
+      "id": 15,
+      "firstName": "Serhat",
+      "lastName": "Taşçı",
+      "email": "serhat@gmail.com",
+      "password": "123456",
+      "dateOfBirth": "13/05/1988",
+      "img": "https://www.linkpicture.com/q/serhartasci.jpg",
+      "position": "memur",
+      "role": "roleAdmin",
+      "expiration": "dswadfedgdsg",
+      "token": "321324548562532"
+    },
+    {
+      "firstName": "Onur",
+      "lastName": "Özüpek",
+      "email": "onur@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 3633748373673845,
+      "dateOfBirth": "20/10/1995",
+      "about": "Bilgisayar Mühendisi",
+      "role": "roleApplicant",
+      "id": 16
+    },
+    {
+      "firstName": "Ayşe",
+      "lastName": "Başar",
+      "email": "ayse@gmail.com",
+      "password": "12345",
+      "nationalIdentity": 15975346820,
+      "dateOfBirth": "18/09/1997",
+      "about": "Yazılımcı",
+      "role": "roleApplicant",
+      "state": 1,
+      "token": 462452156547856,
+      "expiration": "sdfsdfhjfghgdfad",
+      "id": 17
+    }
+  ]
+}

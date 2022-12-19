@@ -1,0 +1,89 @@
+<body>
+  <div class="card border shadow-xs mb-4">
+    <br />
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card-body px-0 py-0">
+          <div class="table-responsive p-0">
+            <table class="table align-items-center mb-0">
+              <tbody>
+                <tr *ngFor="let data of blacklist">
+                  <td>
+                    <div class="d-flex px-5 py-4">
+                      <!-- <div class="d-flex align-items-center">
+                        <img src="{{ applicant.image }}" class="avatar avatar-sm rounded-circle me-2" />
+                      </div> -->
+                      <div class="d-flex flex-column justify-content-center ms-5">
+                        <h6 class="mb-0 text-sm font-weight-semibold">
+                          {{ data.applicantName }}
+                        </h6>
+
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-sm text-dark font-weight-semibold mb-0">
+                      {{ data.reason }}
+                    </p>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="text-sm text-dark font-weight-semibold mb-0">{{data.date}}</span>
+                  </td>
+                  <td class="align-middle text-center text-sm">
+                    <span class="badge badge-md border border-success text-success bg-success" type="button"
+                      style="cursor: pointer" (click)="removeApplicant(data.id, data.applicantId)">Kara Listeden
+                      Sil</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<app-footer></app-footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<h4>Blacklist</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Applicant Id</th>
+      <th scope="col">Date</th>
+      <th scope="col">Reason</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of blacklist">
+      <td>{{ data.applicantName }}</td>
+      <td>{{ data.date }}</td>
+      <td>{{ data.reason }}</td>
+      <button type="button" class="btn btn-outline-danger btn-sm ml-2"
+        
+        (click)="removeApplicant(data.id, data.applicantId)">Remove From Black List</button>
+    </tr>
+    
+  </tbody>
+</table> -->

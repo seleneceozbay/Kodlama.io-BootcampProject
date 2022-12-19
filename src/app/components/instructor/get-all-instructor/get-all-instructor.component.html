@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 d-lg-flex">
+        <div>
+          <div class="container text-center">
+            <br />
+            <div class="container blog-page">
+              <div class="row clearfix">
+                <div class="col-lg-4 col-md-12" *ngFor="let instructor of instructors">
+                  <div class="card single_post">
+                    <div class="header"></div>
+                    <div class="body">
+                      <h3 class="m-t-0 m-b-5">
+                        <a href="blog-details.html">{{ instructor.firstName }} {{ instructor.lastName }}
+                        </a>
+                      </h3>
+                      <ul class="meta">
+                        <li>
+                          <a href="javascript:void(0);"><i class="zmdi zmdi-account col-blue"></i>{{
+                            instructor.companyName }}</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);"><i class="zmdi zmdi-label col-amber"></i>Technology</a>
+                        </li>
+                        <li>
+                          <a href="javascript:void(0);"><i class="zmdi zmdi-comment-text col-blue"></i>{{
+                            instructor.dateOfBirth }}</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="body" style="width: auto; height: 430px">
+                      <div class="img-post m-b-15">
+                        <img src="{{ instructor.image }}" alt="Awesome Image" />
+                        <div class="social_share">
+                          <button class="btn btn-warning btn-icon btn-icon-mini" routerLink="{{ instructor.instagram }}">
+                            <i class="zmdi zmdi-instagram"></i>
+                          </button>
+                          <button class="btn btn-warning btn-icon btn-icon-mini" routerLink="{{ instructor.twitter }}">
+                            <i class="zmdi zmdi-twitter"></i>
+                          </button>
+                          <button class="btn btn-warning btn-icon btn-icon-mini" routerLink="{{ instructor.github }}">
+                            <i class="zmdi zmdi-github"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div style="height: 85px; width: auto">
+                        <p>{{ instructor.title }} <br />{{ instructor.email }}</p>
+                      </div>
+                      <div>
+                        <a title="detay" class="btn btn-round btn-warning" routerLink="/admin/admin-instructor/instructor/{{
+                            instructor.id
+                          }}">Detay</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

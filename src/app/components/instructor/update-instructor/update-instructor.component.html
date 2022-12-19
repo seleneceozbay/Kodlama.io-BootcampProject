@@ -1,0 +1,92 @@
+<div class="content">
+  <button class="btn btn-secondary" routerLink="">BACK</button>
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="title">Update Instructor</h5>
+      </div>
+      <div class="card-body">
+        <form [formGroup]="instructorUpdateForm" *ngIf="instructorUpdateForm">
+          <div class="mb-3">
+            <label for="firstName">First Name</label>
+            <div class="form-group">
+              <input
+                type="text"
+                id="firstName"
+                formControlName="firstName"
+                class="form-control"
+                placeholder="First Name"
+              />
+            </div>
+            <div style="margin-top: 5px" class="form-group">
+              <input
+                type="text"
+                id="lastName"
+                formControlName="lastName"
+                class="form-control"
+                placeholder="Last Name"
+              />
+            </div>
+            <div style="margin-top: 5px" class="form-group">
+              <input
+                type="text"
+                id="dateOfBirth"
+                formControlName="dateOfBirth"
+                class="form-control"
+                placeholder="Date Of Birth"
+              />
+            </div>
+            <div style="margin-top: 5px" class="form-group">
+              <input
+                type="text"
+                id="email"
+                formControlName="email"
+                class="form-control"
+                placeholder="e-mail"
+              />
+            </div>
+            <div style="margin-top: 5px" class="form-group">
+              <input
+                type="text"
+                id="password"
+                formControlName="password"
+                class="form-control"
+                placeholder="password"
+              />
+            </div>
+          </div>
+          <div style="margin-top: 5px" class="form-group">
+            <input
+              type="text"
+              id="companyName"
+              formControlName="companyName"
+              class="form-control"
+              placeholder="Company Name"
+            />
+          </div>
+          <div style="margin-top: 5px" class="form-group">
+            <input
+              type="number"
+              id="nationalIdentity"
+              formControlName="nationalIdentity"
+              class="form-control"
+              placeholder="national Identity"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="car-footer">
+        <div class="d-grid gap-2">
+          <button
+            style="margin-bottom: 10px; margin-left: 15px; margin-right: 15px"
+            class="btn btn-primary"
+            type="button"
+            (click)="update()"
+          >
+            UPDATE
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

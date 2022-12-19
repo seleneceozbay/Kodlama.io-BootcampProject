@@ -1,0 +1,55 @@
+<body>
+  <div class="card border shadow-xs mb-4">
+    <br/>
+    <div class="row mt-2">
+      <div class="col-md-12">
+        <div class="card-body px-0 py-0">
+          <div class="table-responsive p-0">
+            <table class="table align-items-center mb-0">
+              <tbody>
+                <tr *ngFor="let applicant of applicants">
+                  <td>
+                    <div class="d-flex px-5 py-4">
+                      <div class="d-flex align-items-center">
+                        <img src="{{ applicant.image }}" class="avatar avatar-xl rounded-circle me-5" />
+                      </div>
+                      <div class="d-flex flex-column justify-content-center ms-1">
+                        <h6 class="mb-0 text-sm font-weight-semibold">
+                          {{ applicant.firstName }} {{ applicant.lastName }}
+                        </h6>
+                        <p class="text-sm text-secondary mb-0">
+                          {{ applicant.email }}
+                        </p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>
+                    <p class="text-sm text-dark font-weight-semibold mb-0">
+                      {{ applicant.about }}
+                    </p>
+                  </td>
+
+                  <td class="align-middle text-center">
+                    <span class="text-secondary text-sm font-weight-normal">{{
+                      applicant.dateOfBirth
+                      }}</span>
+                  </td>
+
+                  <!-- <td class="align-middle text-center text-sm" routerLink="/applicant/applicant-applicants/applicantdetail/{{
+                      applicant.id
+                    }}">
+                    <span class="badge badge-md border border-success text-success bg-success"
+                      type="button">Detay</span>
+                  </td>               -->
+                  
+                
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<app-footer></app-footer>
